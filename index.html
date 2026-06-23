@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Master</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🧠 Quiz Master</h1>
+
+    <div class="progress">
+        <div id="progressBar"></div>
+    </div>
+
+    <h2 id="question">Question</h2>
+
+    <div id="answers">
+        <button class="option"></button>
+        <button class="option"></button>
+        <button class="option"></button>
+        <button class="option"></button>
+    </div>
+
+    <div class="bottom">
+        <p>⏳ Time Left: <span id="timer">15</span>s</p>
+        <button id="nextBtn">Next</button>
+    </div>
+
+</div>
+
+<div id="result" class="hide">
+    <h1>🏆 Quiz Completed!</h1>
+    <h2>Your Score: <span id="score"></span></h2>
+    <button onclick="location.reload()">Restart Quiz</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
